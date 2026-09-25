@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lesson-10 每日 AI 市场早报 · n8n 实战课</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;background:#0d1b2e;color:#e8eef7;line-height:1.7}
+  .wrap{max-width:880px;margin:0 auto;padding:48px 20px}
+  .badge{display:inline-block;background:#1d3a5f;color:#7fc4ff;border:1px solid #2e5a8f;border-radius:20px;padding:4px 14px;font-size:13px;margin-bottom:16px}
+  h1{font-size:32px;line-height:1.35;margin-bottom:12px}
+  h1 em{color:#ffb454;font-style:normal}
+  .sub{color:#9db4d0;margin-bottom:28px;font-size:16px}
+  .card{background:#122540;border:1px solid #1f3b61;border-radius:12px;padding:22px 24px;margin-bottom:18px}
+  .card h2{font-size:18px;color:#7fc4ff;margin-bottom:10px}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px;margin:10px 0}
+  .flow span{background:#0d1b2e;border:1px solid #2e5a8f;border-radius:8px;padding:6px 12px}
+  .flow i{color:#ffb454;font-style:normal}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+  th,td{border:1px solid #1f3b61;padding:8px 10px;text-align:left}
+  th{background:#0d1b2e;color:#7fc4ff}
+  .free{color:#6fd39a}.pay{color:#ff8080}
+  a{color:#ffb454}
+  ul{padding-left:20px}
+  li{margin:4px 0}
+  .foot{color:#5b7594;font-size:13px;margin-top:28px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">n8n 实战课 · lesson-10</div>
+  <h1>每日 AI 市场早报<br><em>五个数据源 → AI 分析师 → 自动投递</em>，全程零付费</h1>
+  <p class="sub">每个工作日 07:45，股票 / 加密 / 美债 / 宏观日历 / 财经新闻五源并行拉取，归一化后交给一个"不许编造"的 AI 分析师，产出结构化英文早报，自动发到 Telegram、Discord 并存档 Postgres。</p>
+
+  <div class="card">
+    <h2>🔄 流水线一图看懂</h2>
+    <div class="flow">
+      <span>⏰ 工作日 07:45</span><i>→</i><span>5 源并行拉取</span><i>→</i><span>归一化四态关卡</span><i>→</i><span>AI 分析师（DeepSeek）</span><i>→</i><span>JSON 强校验</span><i>→</i><span>Telegram</span><span>Discord</span><span>Postgres</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>💰 数据源与费用</h2>
+    <table>
+      <tr><th>数据源</th><th>内容</th><th>费用</th></tr>
+      <tr><td>Twelve Data</td><td>股指/ETF 日线</td><td class="free">免费注册</td></tr>
+      <tr><td>CoinGecko</td><td>BTC/ETH 行情</td><td class="free">免 key</td></tr>
+      <tr><td>FRED</td><td>美10Y国债收益率</td><td class="free">免费注册</td></tr>
+      <tr><td>Marketaux</td><td>财经新闻</td><td class="free">免费 100次/天</td></tr>
+      <tr><td>QuantGist</td><td>宏观日历</td><td class="pay">付费 · 可裁剪（课程教你怎么裁）</td></tr>
+      <tr><td>DeepSeek</td><td>AI 分析</td><td class="free">约 ¥0.01/次</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>🎓 六章课程</h2>
+    <ul>
+      <li><b>00</b> 课程总览与模板导入——10 分钟跑起骨架</li>
+      <li><b>01</b> 五大数据源拆解——免费 key 获取 + 付费源裁剪标准动作</li>
+      <li><b>02</b> 归一化模式（灵魂章）——四态状态机 + 错误消毒逐行讲透</li>
+      <li><b>03</b> AI Agent 纪律性提示词——防幻觉合约 + 换 DeepSeek</li>
+      <li><b>04</b> 校验与三路投递——Validate 海关 + TG/Discord/Postgres</li>
+      <li><b>05</b> 部署、排错与二次开发——上云清单 + 加数据源五步</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>✅ 已验证</h2>
+    <ul>
+      <li>7 个 Code 节点单元测试 <b>53/53 全过</b></li>
+      <li>全流程 mock + DeepSeek 真调通过：AI 输出数据与输入 100% 一致、零编造</li>
+      <li>4 个模板行为怪癖已定性并写进教案（面试级细节）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📦 开始学习</h2>
+    <p>课程包（README + 六章教程 + 三级练习 + 工作流 JSON）全在仓库里：
+    <a href="https://github.com/xinchun575924529/n8n-lesson-10-ai-market-briefing">github.com/xinchun575924529/n8n-lesson-10-ai-market-briefing</a></p>
+  </div>
+
+  <p class="foot">基于 n8n 官方模板 #19457 改编 · 免费开源课程 · lesson-10</p>
+</div>
+</body>
+</html>
