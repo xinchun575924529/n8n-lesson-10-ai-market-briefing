@@ -48,3 +48,5 @@
 
 - **A 单元级**：7 个 Code 节点忠实移植，**53/53 断言全过**；发现 4 个模板行为怪癖（详见 docs/02 与工厂库 l2-report.md）。
 - **B 全流程**：mock 五源 + DeepSeek 真调 → 校验通过（mild_risk_on）→ TG/Discord/SQL 三产物齐；AI 输出与输入数据完全一致、零编造。
+
+<!-- Pages-Trigger 2026-09-29 -->
